@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		AC5B40AE271EEDBA00489DDF /* MainPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B40AD271EEDBA00489DDF /* MainPostCell.swift */; };
 		AC5B40B0271EF49600489DDF /* MainPostScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B40AF271EF49600489DDF /* MainPostScroll.swift */; };
 		AC6D4B3B272300C400B28CCA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D4B3A272300C400B28CCA /* WebView.swift */; };
+		AC6DC61E2727180D006C7800 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC6DC61D2727180D006C7800 /* GoogleService-Info.plist */; };
 		AC6E546E271ED2A600674EB6 /* ImageUrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E546D271ED2A600674EB6 /* ImageUrlView.swift */; };
 		AC6E5471271ED64400674EB6 /* Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E5470271ED64400674EB6 /* Caching.swift */; };
 		ACA6FC3426FC76F700A22EEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6FC3326FC76F700A22EEA /* AppDelegate.swift */; };
@@ -30,15 +31,18 @@
 		ACBD8BEB26FDF074006CAFF4 /* PostListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD8BEA26FDF074006CAFF4 /* PostListResponse.swift */; };
 		ACD3F8CB26FE1440002C0529 /* ImageNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3F8CA26FE1440002C0529 /* ImageNetworking.swift */; };
 		ACE8E52A2721D81A00F62D61 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8E5292721D81A00F62D61 /* AppTheme.swift */; };
+		B42FC837039F1E6429B48618 /* Pods_InCamerySwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2FEAFD1CD5D7C035D9D344 /* Pods_InCamerySwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC02E6A026FCE75E000CB1E9 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		AC02E6A326FCEBBF000CB1E9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AC188086272487FA002E2D41 /* FullPostResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullPostResponse.swift; sourceTree = "<group>"; };
+		AC2FEAFD1CD5D7C035D9D344 /* Pods_InCamerySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InCamerySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5B40AD271EEDBA00489DDF /* MainPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPostCell.swift; sourceTree = "<group>"; };
 		AC5B40AF271EF49600489DDF /* MainPostScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPostScroll.swift; sourceTree = "<group>"; };
 		AC6D4B3A272300C400B28CCA /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AC6DC61D2727180D006C7800 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC6E546D271ED2A600674EB6 /* ImageUrlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlView.swift; sourceTree = "<group>"; };
 		AC6E5470271ED64400674EB6 /* Caching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caching.swift; sourceTree = "<group>"; };
 		ACA6FC3026FC76F700A22EEA /* InCamerySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InCamerySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +62,8 @@
 		ACBD8BEA26FDF074006CAFF4 /* PostListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListResponse.swift; sourceTree = "<group>"; };
 		ACD3F8CA26FE1440002C0529 /* ImageNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworking.swift; sourceTree = "<group>"; };
 		ACE8E5292721D81A00F62D61 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		CC9222586DF787E3D888A87F /* Pods-InCamerySwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InCamerySwiftUI.release.xcconfig"; path = "Target Support Files/Pods-InCamerySwiftUI/Pods-InCamerySwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		FE367405F25B88BE54431B8C /* Pods-InCamerySwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InCamerySwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-InCamerySwiftUI/Pods-InCamerySwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +71,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42FC837039F1E6429B48618 /* Pods_InCamerySwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B63E3438C5ED4FB491D768C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE367405F25B88BE54431B8C /* Pods-InCamerySwiftUI.debug.xcconfig */,
+				CC9222586DF787E3D888A87F /* Pods-InCamerySwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		595F1F44EB941BD94779CFB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC2FEAFD1CD5D7C035D9D344 /* Pods_InCamerySwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC02E69D26FCE3E6000CB1E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +177,8 @@
 			children = (
 				ACA6FC3226FC76F700A22EEA /* InCamerySwiftUI */,
 				ACA6FC3126FC76F700A22EEA /* Products */,
+				2B63E3438C5ED4FB491D768C /* Pods */,
+				595F1F44EB941BD94779CFB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +193,7 @@
 		ACA6FC3226FC76F700A22EEA /* InCamerySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				AC6DC61D2727180D006C7800 /* GoogleService-Info.plist */,
 				ACBA0AEA26FDE74D001A409D /* Components */,
 				AC02E69E26FCE4C9000CB1E9 /* Modules */,
 				AC02E69D26FCE3E6000CB1E9 /* Supporting Files */,
@@ -237,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA6FC4426FC76F800A22EEA /* Build configuration list for PBXNativeTarget "InCamerySwiftUI" */;
 			buildPhases = (
+				433128E3B68521BA70D4DB42 /* [CP] Check Pods Manifest.lock */,
 				ACA6FC2C26FC76F700A22EEA /* Sources */,
 				ACA6FC2D26FC76F700A22EEA /* Frameworks */,
 				ACA6FC2E26FC76F700A22EEA /* Resources */,
+				EF287699906E549CB107CD06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,12 +317,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA6FC4026FC76F800A22EEA /* LaunchScreen.storyboard in Resources */,
+				AC6DC61E2727180D006C7800 /* GoogleService-Info.plist in Resources */,
 				ACA6FC3D26FC76F800A22EEA /* Preview Assets.xcassets in Resources */,
 				ACA6FC3A26FC76F800A22EEA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		433128E3B68521BA70D4DB42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InCamerySwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF287699906E549CB107CD06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InCamerySwiftUI/Pods-InCamerySwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InCamerySwiftUI/Pods-InCamerySwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InCamerySwiftUI/Pods-InCamerySwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACA6FC2C26FC76F700A22EEA /* Sources */ = {
@@ -388,10 +460,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = InCamery;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -443,9 +516,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = InCamery;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -455,19 +529,21 @@
 		};
 		ACA6FC4526FC76F800A22EEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE367405F25B88BE54431B8C /* Pods-InCamerySwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"InCamerySwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = KEYTJ8NN69;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "InCamerySwiftUI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.InCamerySwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = ArtemDenis.InCamery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,19 +552,21 @@
 		};
 		ACA6FC4626FC76F800A22EEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9222586DF787E3D888A87F /* Pods-InCamerySwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"InCamerySwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = KEYTJ8NN69;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "InCamerySwiftUI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.InCamerySwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = ArtemDenis.InCamery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

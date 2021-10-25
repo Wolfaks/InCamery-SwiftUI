@@ -7,7 +7,7 @@ Test project on SwiftUI
 
 ###### Full post:
 
-![2](https://user-images.githubusercontent.com/26388092/138663650-42aa4cc6-71f6-4438-9f58-737058ff8172.jpg)
+![2](https://user-images.githubusercontent.com/26388092/138665213-87b4bf0d-7049-4a89-8d5f-1908d0b75af6.jpg)
 
 ###### Web version of InCamery.ru:
 

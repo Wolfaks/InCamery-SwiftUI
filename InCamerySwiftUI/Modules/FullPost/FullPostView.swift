@@ -80,6 +80,9 @@ struct FullPostView: View {
                     Text("\(post?.text ?? "")")
                         .font(.system(size: 15))
                         .padding(.horizontal, 10)
+                    
+                    Spacer()
+                        .frame(height: 10)
                 }
             }
         }

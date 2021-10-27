@@ -12,6 +12,7 @@ struct Constants {
     
     struct Urls {
         static let siteLink = "https://incamery.ru/"
+        static let signinLink = "https://incamery.ru/signin"
         static let mediaLink = "https://incamery.ru/media/"
         static let apiLink = "https://incamery.ru/api/v2/"
     }

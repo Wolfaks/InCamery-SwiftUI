@@ -30,7 +30,7 @@ struct MainView: View {
                     .edgesIgnoringSafeArea(.top)
                     .frame(height: 0)
                 
-                WebView(url: Constants.Urls.siteLink)
+                WebView(url: Constants.Urls.signinLink)
             }
             .background(Instruments.colorFromHex(AppTheme.Colors.primary).toColor())
             .tabItem {

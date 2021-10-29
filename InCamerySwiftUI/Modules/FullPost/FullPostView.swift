@@ -11,6 +11,7 @@ import Combine
 struct FullPostView: View {
     var postID: Int
     @State var post: Post?
+    @State var complainted = false
     @State var cancellable = Set<AnyCancellable>()
     
     init(postID: Int) {
@@ -77,9 +78,35 @@ struct FullPostView: View {
                     Divider()
                         .padding(.horizontal, 10)
                     
-                    Text("\(post?.text ?? "")")
-                        .font(.system(size: 15))
+                    if let text = post?.text, !text.isEmpty {
+                        Text(text)
+                            .font(.system(size: 15))
+                            .padding(.horizontal, 10)
+                        
+                        Divider()
+                            .padding(.horizontal, 10)
+                    }
+                    
+                    if !complainted {
+                    Text(Constants.Strings.complaint)
+                        .font(.system(size: 14))
                         .padding(.horizontal, 10)
+                        .foregroundColor(.red)
+                        .onTapGesture {
+                            sendComplaint()
+                        }
+                    } else {
+                        HStack(spacing: 3) {
+                            Image(systemName: "checkmark")
+                                .foregroundColor(Instruments.colorFromHex(AppTheme.Colors.primary).toColor())
+                                .font(.system(size: 13))
+                            
+                            Text(Constants.Strings.complaint)
+                                .font(.system(size: 14))
+                                .foregroundColor(Instruments.colorFromHex(AppTheme.Colors.primary).toColor())
+                        }
+                            .padding(.horizontal, 10)
+                    }
                     
                     Spacer()
                         .frame(height: 10)
@@ -104,6 +131,25 @@ struct FullPostView: View {
                         guard let post = response.post else { return }
                         DispatchQueue.main.async {
                             self.post = response.post
+                        }
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+            .store(in: &cancellable)
+    }
+    
+    func sendComplaint() {
+        PostService().sendComplaint(postID: postID)?
+            .sink { data in
+                guard let data = data as? Data else { return }
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    let response = try ComplaintResponse(json: json)
+                    if response.error == 0 {
+                        DispatchQueue.main.async {
+                            self.complainted = true
                         }
                     }
                 } catch {

@@ -25,6 +25,7 @@
 		ACA6FC4826FC86BB00A22EEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6FC4726FC86BB00A22EEA /* Constants.swift */; };
 		ACA6FC4A26FC8D6800A22EEA /* Instruments.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6FC4926FC8D6800A22EEA /* Instruments.swift */; };
 		ACA6FC4C26FC950100A22EEA /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6FC4B26FC950100A22EEA /* color.swift */; };
+		ACB4461B272BDD07002FFBC9 /* ComplaintResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4461A272BDD07002FFBC9 /* ComplaintResponse.swift */; };
 		ACB6D11E2723FECA00F8CF4E /* FullPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6D11D2723FECA00F8CF4E /* FullPostView.swift */; };
 		ACB6D1212724034400F8CF4E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB6D1202724034400F8CF4E /* HeaderView.swift */; };
 		ACBA0AEC26FDE80A001A409D /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA0AEB26FDE80A001A409D /* PostService.swift */; };
@@ -56,6 +57,7 @@
 		ACA6FC4726FC86BB00A22EEA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ACA6FC4926FC8D6800A22EEA /* Instruments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruments.swift; sourceTree = "<group>"; };
 		ACA6FC4B26FC950100A22EEA /* color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
+		ACB4461A272BDD07002FFBC9 /* ComplaintResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplaintResponse.swift; sourceTree = "<group>"; };
 		ACB6D11D2723FECA00F8CF4E /* FullPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPostView.swift; sourceTree = "<group>"; };
 		ACB6D1202724034400F8CF4E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		ACBA0AEB26FDE80A001A409D /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			children = (
 				ACBD8BEA26FDF074006CAFF4 /* PostListResponse.swift */,
 				AC188086272487FA002E2D41 /* FullPostResponse.swift */,
+				ACB4461A272BDD07002FFBC9 /* ComplaintResponse.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				ACA6FC3826FC76F700A22EEA /* MainView.swift in Sources */,
 				ACA6FC4826FC86BB00A22EEA /* Constants.swift in Sources */,
 				AC6D4B3B272300C400B28CCA /* WebView.swift in Sources */,
+				ACB4461B272BDD07002FFBC9 /* ComplaintResponse.swift in Sources */,
 				ACBA0AEC26FDE80A001A409D /* PostService.swift in Sources */,
 				ACE8E52A2721D81A00F62D61 /* AppTheme.swift in Sources */,
 				AC02E6A126FCE75E000CB1E9 /* Networking.swift in Sources */,
@@ -534,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"InCamerySwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = KEYTJ8NN69;
 				ENABLE_PREVIEWS = YES;
@@ -544,7 +548,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = ArtemDenis.InCamery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -559,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"InCamerySwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = KEYTJ8NN69;
 				ENABLE_PREVIEWS = YES;
@@ -569,7 +573,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = ArtemDenis.InCamery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

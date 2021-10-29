@@ -22,6 +22,7 @@ struct Constants {
         static let mainTabFeed = "Лента"
         static let mainTabWeb = "Веб версия"
         static let post = "Запись"
+        static let complaint = "Пожаловаться на запись"
     }
     
     struct Settings {

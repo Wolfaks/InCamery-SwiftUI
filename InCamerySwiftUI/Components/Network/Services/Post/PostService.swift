@@ -10,19 +10,13 @@ import Combine
 
 class PostService {
     
-    enum links: String {
-        case postList = "main.php"
-        case fullPost = "post.php"
-        case complaintPost = "complaint.php"
-    }
-    
     func getPostList(page: Int) -> AnyPublisher<Any, Never>? {
 
         // Парамс
         let params = ["page": "\(page)"]
 
         // Подготовка URL
-        guard let urlWithParams = NSURLComponents(string: Constants.Urls.apiLink + links.postList.rawValue) else { return nil }
+        guard let urlWithParams = NSURLComponents(string: Constants.Urls.apiLink + Constants.Urls.SubUrls.postList) else { return nil }
 
         // Параметры запроса
         var parameters = [URLQueryItem]()
@@ -49,7 +43,7 @@ class PostService {
         let params = ["id": "\(postID)"]
 
         // Подготовка URL
-        guard let urlWithParams = NSURLComponents(string: Constants.Urls.apiLink + links.fullPost.rawValue) else { return nil }
+        guard let urlWithParams = NSURLComponents(string: Constants.Urls.apiLink + Constants.Urls.SubUrls.fullPost) else { return nil }
 
         // Параметры запроса
         var parameters = [URLQueryItem]()
@@ -76,7 +70,7 @@ class PostService {
         let params = ["id": "\(postID)"]
 
         // Подготовка URL
-        guard let urlWithParams = NSURLComponents(string: Constants.Urls.apiLink + links.complaintPost.rawValue) else { return nil }
+        guard let urlWithParams = NSURLComponents(string: Constants.Urls.apiLink + Constants.Urls.SubUrls.complaintPost) else { return nil }
 
         // Параметры запроса
         var parameters = [URLQueryItem]()

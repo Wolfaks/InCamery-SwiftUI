@@ -120,19 +120,22 @@ struct FullPostView: View {
         }
     }
     
-    func loadFullPost() {
+    private func loadFullPost() {
         PostService().getFullPost(postID: postID)?
             .sink { data in
                 guard let data = data as? Data else { return }
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    let response = try FullPostResponse(json: json)
-                    if response.error == 0 {
-                        guard let post = response.post else { return }
-                        DispatchQueue.main.async {
-                            self.post = response.post
+                    
+                    if let result = String(data: data, encoding: .utf8) {
+                        var postResponse = FullPostResponse()
+                        postResponse.decodeJson(json: result)
+                        if postResponse.error == 0 {
+                            DispatchQueue.main.async {
+                                self.post = postResponse.post
+                            }
                         }
                     }
+                    
                 } catch {
                     print(error.localizedDescription)
                 }
@@ -140,18 +143,22 @@ struct FullPostView: View {
             .store(in: &cancellable)
     }
     
-    func sendComplaint() {
+    private func sendComplaint() {
         PostService().sendComplaint(postID: postID)?
             .sink { data in
                 guard let data = data as? Data else { return }
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    let response = try ComplaintResponse(json: json)
-                    if response.error == 0 {
-                        DispatchQueue.main.async {
-                            self.complainted = true
+                    
+                    if let result = String(data: data, encoding: .utf8) {
+                        var complaintResponse = ComplaintResponse()
+                        complaintResponse.decodeJson(json: result)
+                        if complaintResponse.error == 0 {
+                            DispatchQueue.main.async {
+                                self.complainted = true
+                            }
                         }
                     }
+                    
                 } catch {
                     print(error.localizedDescription)
                 }

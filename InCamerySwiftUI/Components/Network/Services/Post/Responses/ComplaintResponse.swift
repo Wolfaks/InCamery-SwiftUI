@@ -7,17 +7,26 @@
 
 import Foundation
 
-struct ComplaintResponse {
+struct ComplaintResponse: Decodable, ApiResponse {
     
-    var error: Int = 0
+    var error: Int = -1
     var message: String = ""
-
-    init(json: Any) {
+    
+    mutating func decodeJson(json: String) {
         
-        // Обрабатываем полученные данные списка
-        guard let arrayJson = json as? [String: AnyObject], let error = arrayJson["error"] as? Int else { return }
-        self.error = error
-        message = (arrayJson["message"] as? String) ?? ""
+        // Обрабатываем полученные данные
+        guard !json.isEmpty else { return }
+        
+        let jsonData = Data(json.utf8)
+        let decoder = JSONDecoder()
+        
+        do {
+            let responseDecode = try decoder.decode(ComplaintResponse.self, from: jsonData)
+            self.error = responseDecode.error
+            self.message = responseDecode.message
+        } catch {
+            //print(error)
+        }
         
     }
     

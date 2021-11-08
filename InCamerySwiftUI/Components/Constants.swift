@@ -15,6 +15,12 @@ struct Constants {
         static let signinLink = "https://incamery.ru/signin"
         static let mediaLink = "https://incamery.ru/media/"
         static let apiLink = "https://incamery.ru/api/v2/"
+        
+        struct SubUrls {
+            static let  postList = "main.php"
+            static let  fullPost = "post.php"
+            static let  complaintPost = "complaint.php"
+        }
     }
     
     struct Strings {

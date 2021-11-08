@@ -42,25 +42,29 @@ struct MainPostScroll: View {
         }
     }
     
-    func loadPosts() {
+    private func loadPosts() {
         haveNextPage = false
         
         PostService().getPostList(page: page)?
             .sink { data in
                 guard let data = data as? Data else { return }
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    let response = try PostListResponse(json: json)
-                    if response.error == 0 {
-                        DispatchQueue.main.async {
-                            if self.page == 1 {
-                                self.posts = response.posts
-                            } else {
-                                self.posts.append(contentsOf: response.posts)
+                    
+                    if let result = String(data: data, encoding: .utf8) {
+                        var postListResponse = PostListResponse()
+                        postListResponse.decodeJson(json: result)
+                        if postListResponse.error == 0 {
+                            DispatchQueue.main.async {
+                                if self.page == 1 {
+                                    self.posts = postListResponse.posts
+                                } else {
+                                    self.posts.append(contentsOf: postListResponse.posts)
+                                }
+                                self.haveNextPage = postListResponse.haveNextPage
                             }
-                            self.haveNextPage = response.haveNextPage
                         }
                     }
+                    
                 } catch {
                     print(error.localizedDescription)
                 }
@@ -68,7 +72,7 @@ struct MainPostScroll: View {
             .store(in: &cancellable)
     }
     
-    func loadMore() {
+    private func loadMore() {
         if haveNextPage {
             page += 1
             loadPosts()

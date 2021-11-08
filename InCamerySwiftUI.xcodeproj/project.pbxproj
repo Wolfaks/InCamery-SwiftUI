@@ -16,6 +16,7 @@
 		AC6DC61E2727180D006C7800 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC6DC61D2727180D006C7800 /* GoogleService-Info.plist */; };
 		AC6E546E271ED2A600674EB6 /* ImageUrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E546D271ED2A600674EB6 /* ImageUrlView.swift */; };
 		AC6E5471271ED64400674EB6 /* Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E5470271ED64400674EB6 /* Caching.swift */; };
+		AC88F96227397450001D69FA /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88F96127397450001D69FA /* ApiResponse.swift */; };
 		ACA6FC3426FC76F700A22EEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6FC3326FC76F700A22EEA /* AppDelegate.swift */; };
 		ACA6FC3626FC76F700A22EEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6FC3526FC76F700A22EEA /* SceneDelegate.swift */; };
 		ACA6FC3826FC76F700A22EEA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6FC3726FC76F700A22EEA /* MainView.swift */; };
@@ -46,6 +47,7 @@
 		AC6DC61D2727180D006C7800 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC6E546D271ED2A600674EB6 /* ImageUrlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlView.swift; sourceTree = "<group>"; };
 		AC6E5470271ED64400674EB6 /* Caching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caching.swift; sourceTree = "<group>"; };
+		AC88F96127397450001D69FA /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		ACA6FC3026FC76F700A22EEA /* InCamerySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InCamerySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA6FC3326FC76F700A22EEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA6FC3526FC76F700A22EEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AC88F9632739745F001D69FA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AC88F96127397450001D69FA /* ApiResponse.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		ACA6FC2726FC76F700A22EEA = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +263,7 @@
 		ACBD8BEC26FDF077006CAFF4 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
+				AC88F9632739745F001D69FA /* Protocols */,
 				ACBD8BEA26FDF074006CAFF4 /* PostListResponse.swift */,
 				AC188086272487FA002E2D41 /* FullPostResponse.swift */,
 				ACB4461A272BDD07002FFBC9 /* ComplaintResponse.swift */,
@@ -386,6 +397,7 @@
 				ACB6D11E2723FECA00F8CF4E /* FullPostView.swift in Sources */,
 				ACA6FC4A26FC8D6800A22EEA /* Instruments.swift in Sources */,
 				AC02E6A426FCEBBF000CB1E9 /* Post.swift in Sources */,
+				AC88F96227397450001D69FA /* ApiResponse.swift in Sources */,
 				ACA6FC4C26FC950100A22EEA /* color.swift in Sources */,
 				AC5B40AE271EEDBA00489DDF /* MainPostCell.swift in Sources */,
 				ACA6FC3826FC76F700A22EEA /* MainView.swift in Sources */,

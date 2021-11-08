@@ -7,23 +7,28 @@
 
 import Foundation
 
-struct FullPostResponse {
+struct FullPostResponse: Decodable, ApiResponse {
     
     var post: Post?
-    var error: Int = 0
+    var error: Int = -1
     var message: String = ""
-
-    init(json: Any) {
+    
+    mutating func decodeJson(json: String) {
         
-        // Обрабатываем полученные данные списка
-        guard let arrayJson = json as? [String: AnyObject], let error = arrayJson["error"] as? Int else { return }
-        self.error = error
-        message = (arrayJson["message"] as? String) ?? ""
+        // Обрабатываем полученные данные
+        guard !json.isEmpty else { return }
         
-        // Обработка записей
-        if error == 0, let postDict = arrayJson["post"] as? [String: AnyObject], !postDict.isEmpty {
-            guard let post = Post(dict: postDict) else { return }
-            self.post = post
+        let jsonData = Data(json.utf8)
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        
+        do {
+            let responseDecode = try decoder.decode(FullPostResponse.self, from: jsonData)
+            self.post = responseDecode.post
+            self.error = responseDecode.error
+            self.message = responseDecode.message
+        } catch {
+            //print(error)
         }
         
     }

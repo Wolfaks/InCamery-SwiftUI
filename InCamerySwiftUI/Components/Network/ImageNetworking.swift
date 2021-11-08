@@ -18,12 +18,12 @@ class ImageNetworking: ObservableObject {
         loadImage()
     }
     
-    func loadImage() {
+    private func loadImage() {
         guard !loadFromCache() else { return }
         loadFromUrl()
     }
     
-    func loadFromCache() -> Bool {
+    private func loadFromCache() -> Bool {
         guard let cacheImage = imageCaching.get(forKey: url) else {
             return false
         }
@@ -32,7 +32,7 @@ class ImageNetworking: ObservableObject {
         return true
     }
     
-    func loadFromUrl() {
+    private func loadFromUrl() {
         guard let url = URL(string: url) else { return }
 
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
